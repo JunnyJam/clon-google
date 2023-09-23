@@ -1,0 +1,172 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    background-position: center center;
+    margin: 0px 0px 0px 0px;
+    background-image: url("assets/Yosemite-background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding: 0 18px;
+}
+
+header .opciones{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .opciones a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: mintcream;
+}
+
+header .opciones a img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.dots-logo {
+    display: inline-block;
+    background-image: url(assets/dots-logo.svg);
+    background-repeat: no-repeat;
+    background-position: absolute, center;
+    width: 24px;
+    height: 24px;
+}
+
+.google-logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(assets/google-logo.svg);
+    background-repeat: no-repeat;
+    background-position: absolute, center;
+    width: 272px;
+    height: 92px;
+}
+
+.search-logo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/search-logo.svg);
+    background-position: absolute, center;
+    background-repeat: no-repeat;
+}
+
+.micro-logo{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(assets/micro-logo.svg);
+    background-position: absolute, center;
+    background-repeat: no-repeat;
+}
+
+.camera-logo{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(assets/camera-logo.svg);
+    background-position: absolute, center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+main{
+    height: calc(100% - 60px - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+main .container .search {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    padding: 8px 12px;
+    border: 1px solid #e4d1af;
+    border-radius: 24px;
+}
+
+main .container .search input{
+    background-color: transparent;
+    border: none;
+    color: mintcream;
+    width: 100%;
+}
+
+main .container .search button{
+    border: none;
+    background-color: transparent;
+}
+
+main .container .search-buttons button{
+    gap: 8px;
+    font-size: small;
+}
+
+main .container .search-buttons button{
+    border-radius: 4px;
+    background-color: #e4d1af;
+    border: none;
+    padding: 12px;
+    color: rgb(14, 14, 14);
+}
+
+main .container figure{
+    height: 92px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    background-color: #f6daa9;
+}
+
+footer section{
+    padding: 0 30px;
+    align-items: center;
+    display: flex;
+    height: 50%;
+    color: #000;
+}
+
+footer section.info {
+    border-top:#c89b4e solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section.info div{
+    display: flex;
+    gap: 18px;
+}
+
+footer section.info div a{
+    text-decoration: none;
+    color: #000;
+}
