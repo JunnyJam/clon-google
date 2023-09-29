@@ -21,15 +21,22 @@ header{
 }
 
 header .opciones{
+    padding-left: 0;
     display: flex;
     align-items: center;
     gap: 12px;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 header .opciones a{
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font: 14px/28px 'Roboto',Arial,sans-serif;
     text-decoration: none;
     color: mintcream;
+    display: inline-block;
+    line-height: 24px;
+    padding-left: 15px;
 }
 
 header .opciones a img{
@@ -59,12 +66,12 @@ header .opciones a img{
 }
 
 .search-logo{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
     background-image: url(assets/search-logo.svg);
-    background-position: absolute, center;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
 }
 
 .micro-logo{
@@ -72,7 +79,7 @@ header .opciones a img{
     width: 24px;
     height: 24px;
     background-image: url(assets/micro-logo.svg);
-    background-position: absolute, center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -83,7 +90,7 @@ header .opciones a img{
     background-image: url(assets/camera-logo.svg);
     background-position: absolute, center;
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size: cover;
 }
 
 main{
@@ -108,13 +115,15 @@ main .container .search {
     width: 450px;
     padding: 8px 12px;
     border: 1px solid #e4d1af;
+    background-color: white;
     border-radius: 24px;
 }
 
 main .container .search input{
-    background-color: transparent;
+    background-color: white;
     border: none;
-    color: mintcream;
+    outline: none;
+    color: black;
     width: 100%;
 }
 
@@ -141,10 +150,13 @@ main .container figure{
 }
 
 footer{
+    font-family: 14px arial, sans-serif;
     display: flex;
     flex-direction: column;
     height: 65px;
     background-color: #f6daa9;
+    border-top: 1px solid #c89b4e;
+    white-space: nowrap;
 }
 
 footer section{
